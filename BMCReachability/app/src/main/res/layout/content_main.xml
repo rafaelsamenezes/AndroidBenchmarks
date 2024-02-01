@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="9dp"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Magic Input"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Submit"
+        app:layout_constraintTop_toBottomOf="@id/edittext"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button">
+
+        <CheckBox
+            android:id="@+id/checkbox_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option A" />
+
+        <CheckBox
+            android:id="@+id/checkbox_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option B" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
