@@ -31,17 +31,8 @@ class MainActivity : AppCompatActivity() {
             val value = editText.text.toString().toInt()
             val isAChecked = checkBoxA.isChecked
             val isBChecked = checkBoxB.isChecked
-            if (value == 42) {
-                // If Checkbox A and B are set
-                if (isAChecked && isBChecked) {
-                   assert(false)
-                }
-                // If CheckBox A is set
-                else if (isAChecked) {
-                    assert(true)
-                } else {
-                    assert(true)
-                }
+            if (value == 42 && isAChecked && !isBChecked) {
+                throw Exception("My error")
             }
         }
     }
