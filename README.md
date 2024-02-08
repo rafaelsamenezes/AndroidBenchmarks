@@ -39,7 +39,9 @@ The following packages are needed:
   
   a. Enter into ESBMC directory: `$ cd ESBMC\bin`
   
-  b. Run esbmc with the file: `$ ./esbmc.exe ..\..\Example\main.jimple --function onCreate'$'lambda-0_2 --force-malloc-success --no-pointer-check --target Lbr/com/sapientia/bmc_reachability/Other';' '
+  b. Run esbmc with the file: `$ ./esbmc.exe ..\..\Example\main.jimple --function onCreate'$'lambda-0_2 --force-malloc-success --no-pointer-check`
+
+  
      Please note the escape characters: in Windows to escape a character just wrap it using single quote '!!!!
 	 Note: You can replace the "--function" as fit. For functions --goto-functions-only will list all available functions
   
